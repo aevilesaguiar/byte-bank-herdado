@@ -3,7 +3,7 @@ public class Funcionario {
 	
 	private String nome;
 	private String cpf;
-	private double salario;
+	private double salario;//o modificador protected está no meio de public e private- protected é publico para os meus filhos
 	
 	//construtor padrão é aquele que não recebe nenhum parametro, se eu não incluir o compilador insere automaticamente
 	public Funcionario() {
@@ -11,12 +11,9 @@ public class Funcionario {
 	}
 	
 	//criando o metodo bonificação para todos os funcionarios
-	public double getBonificaçao() {
-		return this.salario*0.1;
+	public double getBonificacao() {
+		return this.salario*0.05;
 	}
-	
-	
-	
 	
 	
 	//getter e setter
