@@ -22,6 +22,8 @@ public class TesteReferencias {
 		Diretor d = new Diretor();
 		d.setSalario(30000);
 		
+		Designer designer = new Designer();
+		designer.setSalario(2000);
 		
 		
 		ControleBonificacao controle = new ControleBonificacao();
@@ -29,7 +31,7 @@ public class TesteReferencias {
 		controle.registra(funcionario);
 		controle.registra(eV);
 		controle.registra(d);
-		
+		controle.registra(designer);
 		
 		
 		
