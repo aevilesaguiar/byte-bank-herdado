@@ -1,5 +1,7 @@
 
-public class Funcionario {
+//Não pode criar/instanciar objetos dessa classe, por que é abstrata
+
+public abstract class  Funcionario {
 	
 	private String nome;
 	private String cpf;
@@ -10,11 +12,10 @@ public class Funcionario {
 		
 	}
 	
-	//criando o metodo bonificação para todos os funcionarios
-	public double getBonificacao() {
-		return this.salario*0.05;
-	}
+	//método sem corpo, não há implementação do método, para ser utilizado o filho precisa implementar
 	
+	  public abstract double getBonificacao();
+	 
 	
 	//getter e setter
 	public String getNome() {

@@ -12,7 +12,7 @@ public class TesteReferencias {
 		g1.setSalario(5000.00);
 		
 		
-		Funcionario funcionario = new Funcionario();
+		Funcionario funcionario = new Gerente();
 		funcionario.setSalario(2000);
 		
 		
@@ -28,7 +28,6 @@ public class TesteReferencias {
 		
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(g1);
-		controle.registra(funcionario);
 		controle.registra(eV);
 		controle.registra(d);
 		controle.registra(designer);
